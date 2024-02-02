@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:healthcare/models/message_model.dart';
 
-import '../components/chat_screen.dart';
+import '../Screens/chat_screen.dart';
 
 class FavoriteContacts extends StatelessWidget {
   const FavoriteContacts({super.key});

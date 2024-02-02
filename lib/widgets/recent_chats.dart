@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:healthcare/components/chat_screen.dart';
+import 'package:healthcare/Screens/chat_screen.dart';
 
 import '../models/message_model.dart';
 

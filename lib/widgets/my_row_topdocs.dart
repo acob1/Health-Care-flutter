@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'my_health_doc.dart';
+import '../Screens/my_health_doc.dart';
 
 class MyRowTopdocs extends StatelessWidget {
   const MyRowTopdocs({

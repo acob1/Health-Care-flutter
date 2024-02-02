@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:healthcare/components/cart.dart';
-import 'package:healthcare/components/catalog.dart';
-import 'package:healthcare/components/chat.dart';
-import 'package:healthcare/components/homepage.dart';
+import 'package:healthcare/Screens/cart.dart';
+import 'package:healthcare/Screens/catalog.dart';
+import 'package:healthcare/Screens/chat.dart';
+import 'package:healthcare/Screens/homepage.dart';
 
 void main() {
   runApp(const MyApp());
