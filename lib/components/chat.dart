@@ -49,27 +49,31 @@ class _ChatState extends State<Chat> {
         Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
       appBar: AppBar(
-        backgroundColor: const Color(0xff3A4D7F),
+        backgroundColor: const Color(0xff23355F),
         leading: IconButton(
           icon: const Icon(Icons.menu),
           iconSize: 30.0,
           color: Colors.white,
           onPressed: () {},
         ),
-        title: const Text(
-          'Chats',
-          style: TextStyle(
-              fontSize: 28.0, fontWeight: FontWeight.bold, color: Colors.white),
-        ),
+        // title: const Center(
+        //   child: Text(
+        //     'Chats',
+        //     style: TextStyle(
+        //         fontSize: 28.0,
+        //         fontWeight: FontWeight.bold,
+        //         color: Colors.white),
+        //   ),
+        // ),
         elevation: 0.0,
-        actions: <Widget>[
-          IconButton(
-            icon: const Icon(Icons.search),
-            iconSize: 30.0,
-            color: Colors.white,
-            onPressed: () {},
-          ),
-        ],
+        // actions: <Widget>[
+        //   IconButton(
+        //     icon: const Icon(Icons.search),
+        //     iconSize: 30.0,
+        //     color: Colors.white,
+        //     onPressed: () {},
+        //   ),
+        // ],
       ),
       body: Column(
         children: <Widget>[
@@ -77,7 +81,7 @@ class _ChatState extends State<Chat> {
           Expanded(
             child: Container(
               decoration: const BoxDecoration(
-                color: Colors.white,
+                color: Color(0xff3A4D7F),
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30.0),
                     topRight: Radius.circular(30.0)),

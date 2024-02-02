@@ -10,6 +10,6 @@ class Cart extends StatefulWidget {
 class _CartState extends State<Cart> {
   @override
   Widget build(BuildContext context) {
-    return const Center(child: const Text("Cart"));
+    return const Center(child:  Text("Profile"));
   }
 }

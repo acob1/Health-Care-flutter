@@ -60,9 +60,15 @@ final User steven = User(
   name: 'Steven',
   imageUrl: 'images/steven.jpg',
 );
+// ignore: non_constant_identifier_names
+final User Sweartagawd = User(
+  id: 8,
+  name: 'Sweartagawd',
+  imageUrl: 'images/john.jpg',
+);
 
 // FAVORITE CONTACTS
-List<User> favorites = [sam, steven, olivia, john, greg];
+List<User> favorites = [sam, Sweartagawd, steven, olivia, john, greg];
 
 // EXAMPLE CHATS ON HOME SCREEN
 List<Message> chats = [
@@ -104,6 +110,13 @@ List<Message> chats = [
   Message(
     sender: sam,
     time: '12:30 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
+    isLiked: false,
+    unread: false,
+  ),
+  Message(
+    sender: Sweartagawd,
+    time: '12:49 PM',
     text: 'Hey, how\'s it going? What did you do today?',
     isLiked: false,
     unread: false,
@@ -158,6 +171,20 @@ List<Message> messages = [
     sender: james,
     time: '2:00 PM',
     text: 'I ate so much food today.',
+    isLiked: false,
+    unread: true,
+  ),
+  Message(
+    sender: currentUser,
+    time: '2:30 PM',
+    text: 'So tomorrow will you be available?',
+    isLiked: true,
+    unread: true,
+  ),
+  Message(
+    sender: Sweartagawd,
+    time: '2:00 PM',
+    text: 'I don\'t really know, let\'s wait and see what will happen',
     isLiked: false,
     unread: true,
   ),

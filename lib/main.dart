@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primaryColor: const Color(0xff3A4D7F),
+        primaryColor: const Color(0xff23355F),
+        // const Color(0xff3A4D7F),
         hintColor: const Color(0xFFFEF9EB),
         useMaterial3: true,
       ),
@@ -75,8 +76,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 text: 'Chat',
               ),
               GButton(
-                icon: Icons.shopping_cart,
-                text: 'Shop',
+                icon: Icons.person,
+                text: 'Profile',
               ),
             ],
             selectedIndex: _selectedIndex,
