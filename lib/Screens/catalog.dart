@@ -15,25 +15,14 @@ class _CatalogState extends State<Catalog> {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
         child: Column(
           children: [
-            const Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Icon(
-                  Icons.arrow_back_ios,
-                  color: Colors.white,
-                ),
-                Text(
-                  "Shop Medicine",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold),
-                ),
-                Icon(
-                  Icons.search,
-                  color: Colors.white,
-                ),
-              ],
+            const Center(
+              child: Text(
+                "Shop Medicine",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold),
+              ),
             ),
             const SizedBox(
               height: 40,

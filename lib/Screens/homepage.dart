@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../widgets/disease_type.dart';
 import '../widgets/more_docWidgets.dart';
+import '../widgets/my_search_widget.dart';
 import 'my_health_doc.dart';
 import '../widgets/my_row_topdocs.dart';
 
@@ -62,7 +63,6 @@ class _HomePageState extends State<HomePage> {
                 padding: const EdgeInsets.only(top: 20),
                 child: Expanded(
                   child: Container(
-
                     height: 100,
                     decoration: BoxDecoration(
                       color: const Color(0xff3A4D7F),
@@ -120,27 +120,7 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(
                 height: 15,
               ),
-              TextFormField(
-                controller: searchName,
-                decoration: InputDecoration(
-                    focusedBorder: const OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Color(0xff3A4D7F),
-                      ),
-                    ),
-                    suffixIcon: const Icon(
-                      Icons.search,
-                      color: Colors.white,
-                    ),
-                    fillColor: const Color(0xff3A4D7F),
-                    border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12)),
-                    hintText: 'e.g what can we do for you',
-                    hintStyle: const TextStyle(
-                        color: Color.fromARGB(255, 202, 202, 202)),
-                    labelText: 'How can I help?',
-                    labelStyle: const TextStyle(color: Colors.white)),
-              ),
+              MySearchWidget(searchName: searchName),
               const SizedBox(
                 height: 40,
               ),
