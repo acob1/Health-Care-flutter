@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:healthcare/models/message_model.dart';
 
 import '../widgets/accountbal_widget.dart';
 import '../widgets/smallcons_widget.dart';
+import '../widgets/viewpayees.dart';
 
 class WalletScreen extends StatefulWidget {
   const WalletScreen({super.key});
@@ -11,6 +13,7 @@ class WalletScreen extends StatefulWidget {
 }
 
 class _WalletScreenState extends State<WalletScreen> {
+  final searchName = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -79,7 +82,58 @@ class _WalletScreenState extends State<WalletScreen> {
               ],
             ),
             const AccountBal(),
-            const SmallContainers()
+            const SmallContainers(),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Text(
+                  "Activity",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 23,
+                      color: Colors.white),
+                ),
+              ],
+            ),
+            TextFormField(
+              controller: searchName,
+              decoration: InputDecoration(
+                focusedBorder: const OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Color(0xff3A4D7F),
+                  ),
+                ),
+                suffixIcon: const Icon(
+                  Icons.search,
+                  color: Colors.white,
+                ),
+                fillColor: const Color(
+                  0xff3A4D7F,
+                ),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(
+                    12,
+                  ),
+                ),
+                hintText: 'Search for a name, date, amount',
+                hintStyle: const TextStyle(
+                  color: Color.fromARGB(
+                    255,
+                    202,
+                    202,
+                    202,
+                  ),
+                ),
+                labelText: 'Search',
+                labelStyle: const TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 15.0,
+            ),
+            const ViewPayees()
           ],
         ),
       ),
