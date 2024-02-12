@@ -49,8 +49,8 @@ class _MyHomePageState extends State<MyHomePage> {
   // ignore: non_constant_identifier_names
   static final List<Widget> _NavScreens = <Widget>[
     const HomePage(),
-    const Catalog(),
     const Chat(),
+    const Catalog(),
     const Cart()
   ];
 
@@ -73,12 +73,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 text: 'Home',
               ),
               GButton(
-                icon: Icons.favorite_border,
-                text: 'Catalog',
-              ),
-              GButton(
                 icon: Icons.chat_bubble_rounded,
                 text: 'Chat',
+              ),
+              GButton(
+                icon: Icons.account_balance_wallet,
+                text: 'Wallet',
               ),
               GButton(
                 icon: Icons.person,

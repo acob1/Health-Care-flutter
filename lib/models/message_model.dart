@@ -73,6 +73,20 @@ List<User> favorites = [sam, Sweartagawd, steven, olivia, john, greg];
 // EXAMPLE CHATS ON HOME SCREEN
 List<Message> chats = [
   Message(
+    sender: sam,
+    time: '5:55 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
+    isLiked: true,
+    unread: true,
+  ),
+  Message(
+    sender: john,
+    time: '5:40 PM',
+    text: 'Hey, how\'s it going? What did you do today?',
+    isLiked: false,
+    unread: true,
+  ),
+  Message(
     sender: james,
     time: '5:30 PM',
     text: 'Hey, how\'s it going? What did you do today?',
@@ -176,14 +190,42 @@ List<Message> messages = [
   ),
   Message(
     sender: currentUser,
-    time: '2:30 PM',
+    time: '1:50 PM',
     text: 'So tomorrow will you be available?',
     isLiked: true,
     unread: true,
   ),
   Message(
     sender: Sweartagawd,
-    time: '2:00 PM',
+    time: '1:30 PM',
+    text: 'I don\'t really know, let\'s wait and see what will happen',
+    isLiked: false,
+    unread: true,
+  ),
+  Message(
+    sender: currentUser,
+    time: '1:00 PM',
+    text: 'So tomorrow will you be available?',
+    isLiked: true,
+    unread: true,
+  ),
+  Message(
+    sender: Sweartagawd,
+    time: '12:53 PM',
+    text: 'I don\'t really know, let\'s wait and see what will happen',
+    isLiked: false,
+    unread: true,
+  ),
+  Message(
+    sender: currentUser,
+    time: '12:20 PM',
+    text: 'So tomorrow will you be available?',
+    isLiked: true,
+    unread: true,
+  ),
+  Message(
+    sender: james,
+    time: '12:00 PM',
     text: 'I don\'t really know, let\'s wait and see what will happen',
     isLiked: false,
     unread: true,

@@ -19,6 +19,5 @@ class MyHealthDoc extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }

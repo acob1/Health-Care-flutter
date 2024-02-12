@@ -45,17 +45,17 @@ class _ChatScreenState extends State<ChatScreen> {
             message.time,
             style: const TextStyle(
                 color: Colors.blueGrey,
-                fontSize: 16.0,
+                fontSize: 10.0,
                 fontWeight: FontWeight.w600),
           ),
           const SizedBox(
-            height: 8.0,
+            height: 5.0,
           ),
           Text(
             message.text,
             style: const TextStyle(
                 color: Colors.blueGrey,
-                fontSize: 16.0,
+                fontSize: 11.0,
                 fontWeight: FontWeight.w600),
           ),
         ],

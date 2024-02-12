@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../widgets/disease_type.dart';
 import '../widgets/more_docWidgets.dart';
 import '../widgets/my_search_widget.dart';
-import 'my_health_doc.dart';
 import '../widgets/my_row_topdocs.dart';
 
 class HomePage extends StatefulWidget {
