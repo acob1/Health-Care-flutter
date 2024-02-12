@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:healthcare/Screens/cart.dart';
-import 'package:healthcare/Screens/catalog.dart';
+import 'package:healthcare/Screens/wallet_screen.dart';
 import 'package:healthcare/Screens/chat.dart';
 import 'package:healthcare/Screens/homepage.dart';
 
@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
   static final List<Widget> _NavScreens = <Widget>[
     const HomePage(),
     const Chat(),
-    const Catalog(),
+    const WalletScreen(),
     const Cart()
   ];
 
